@@ -10,7 +10,7 @@ function App() {
     setTodos(todos);
   }
 
-  async function createTodo(e) {
+  async function createTodo(e){
     e.preventDefault();
     await service.addTask(newTodo);
     setNewTodo("");
